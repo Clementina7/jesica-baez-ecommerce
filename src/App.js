@@ -7,7 +7,9 @@ function App() {
 
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
-    <a className="navbar-brand" href={logo}>Armenia - blanco & deco</a>
+    <a className="navbar-brand" href="#">
+    <img src={logo} width="50" height="50" alt=""></img>
+    </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
