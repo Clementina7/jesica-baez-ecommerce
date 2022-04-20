@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
 
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">
     <img src={logo} width="50" height="50" alt=""></img>
