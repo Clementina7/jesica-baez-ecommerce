@@ -1,14 +1,13 @@
 import React from 'react';
 import logo from '../logo.png';
-import '../App.css';
 
 function NavBar () {
   return (
 
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-info">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">
-    <img src={logo} className="rounded-circle" width="100" height="100" alt=""></img>
+    <img src={logo} className="rounded-circle" width="80" height="80" alt=""></img>
     </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
