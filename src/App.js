@@ -1,13 +1,19 @@
 import React from 'react';
-import Categoria from './components/Categoria';
+import Formulario from './components/Formulario';
 import NavBar from './components/NavBar';
+import Productos from './components/Productos';
 
-function App() {
+const App = () => {
   return (
-        
-    <div>
-     <NavBar/>
-    </div>
+    <>
+    <NavBar/>
+    <br/>
+    <Productos/>
+    <br/>
+    <Productos/>
+    <br/>
+    <Formulario/>
+    </>
     
   );
 }
