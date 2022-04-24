@@ -4,7 +4,9 @@ import carrito from '../carrito.png';;
 const CarroDeCompras = () => {
   return (
     <div>
-    <img src={carrito} className="rounded-circle" width="80" height="80" alt=""></img>       
+    <a class="btn-border-radius" href="#" role="button">  
+    <img src={carrito} className="rounded-circle" width="50" height="50" alt=""></img>       
+    </a>
     </div>
   )
 }
