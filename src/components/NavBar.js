@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../logo.png';
-import CarroDeCompras from './CarroDeCompras';
+import CartWidget from './CartWidget';
 
 function NavBar() {
   return (
@@ -20,7 +20,7 @@ function NavBar() {
             <a className="nav-link" href="#">Contacto</a>
           </div>
         </div>
-        <CarroDeCompras/>
+        <CartWidget/>
       </div>
     </nav>
 

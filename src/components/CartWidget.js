@@ -1,7 +1,7 @@
 import React from 'react';
 import carrito from '../carrito.png';;
 
-const CarroDeCompras = () => {
+const CartWidget = () => {
   return (
     <div>
     <a class="btn-border-radius" href="#" role="button">  
@@ -11,4 +11,4 @@ const CarroDeCompras = () => {
   )
 }
 
-export default CarroDeCompras
+export default CartWidget

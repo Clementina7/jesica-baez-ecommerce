@@ -1,6 +1,6 @@
 import React from 'react';
 import Formulario from './components/Formulario';
-import Lista from './components/Lista';
+import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 import Productos from './components/Productos';
 
@@ -9,7 +9,7 @@ const App = () => {
     <>
     <NavBar/>
     <br/>
-    <Lista/>
+    <ItemListContainer/>
     <br/>
     <Productos/>
     <br/>
