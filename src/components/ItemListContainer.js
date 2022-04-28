@@ -1,16 +1,24 @@
-import React from 'react'
+import React from 'react';
+import logo from '../logo.png';
 
-const Lista = () => {
+
+const ItemListContainer = ({
+  greeting,
+  boton,
+  imagen,
+}) => {
+
   return (
-    <div className="list-group">
-  <a href="#" className="list-group-item list-group-item-action" aria-current="true">
-    Todos los productos
-  </a>
-  <a href="#" className="list-group-item list-group-item-action">Dormitorio</a>
-  <a href="#" className="list-group-item list-group-item-action">Bebé</a>
-  <a href="#" className="list-group-item list-group-item-action">Decoración</a>
-    </div>
-  )
+    
+      <div className="card m-3" style={{width:"18rem"}}>
+        <img src={greeting || logo} className="card-img-top" alt="..."/>
+      <div className="card-body">
+        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      </div>
+     
+  );
+
 }
 
-export default Lista
+export default ItemListContainer;
