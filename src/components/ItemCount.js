@@ -1,18 +1,18 @@
 import React, {useState} from 'react'
 
-const ItemCount = () => {
+const ItemCount = ({stock, initial, onAdd}) => {
 
-  const [contador, setContador] = useState(0);
+  const [contador, setContador] = useState(0)
 
   function sumar () {
    
-    if (contador >= 0 && contador < 5){
-    setContador(contador+1)}
-  } 
+    if (contador < stock) {
+      setContador(contador+1)}
+  }
 
   function restar () {
    
-    if (contador > 0 && contador < 6){
+    if (contador > initial) {
     setContador(contador-1)}
   }
 
@@ -28,7 +28,7 @@ const ItemCount = () => {
     </div>
     </>
   
-    );
+    )
 
 
 }

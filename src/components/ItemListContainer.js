@@ -16,7 +16,7 @@ const ItemListContainer = ({
       <div className="card-body">
         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
-      <ItemCount/>
+      <ItemCount stock="5" initial="1"/>
       </div>
       
      </>
