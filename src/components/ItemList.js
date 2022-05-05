@@ -3,10 +3,11 @@ import React from 'react'
 const ItemList = ({productos}) => {
   return (
     <>
-    {productos.length > 0 ? (
-      productos.map((productos, index) => (
+    {
+    productos.length > 0 ? (
+      productos.map((productos) => (
       <>
-      <h1>{productos.title}{productos.price}</h1>
+      <h2>{productos.id}{productos.title}{productos.price}</h2>
       </>
     ))
     ) : (
