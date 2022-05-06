@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import repasador from '../repasador.jpg';
 import ItemList from './ItemList';
+ 
 
 function Item() {
 
@@ -10,21 +10,21 @@ const articulos = [{
   id: 1,
   title: "Repasador",
   price: 300,
-  pictureUrl:'https://shefasabanas.com/wp-content/uploads/2018/08/Repasador-Marquez-cuadros-1-1.jpeg', 
+  pictureUrl: 'https://shefasabanas.com/wp-content/uploads/2018/08/Repasador-Marquez-cuadros-1-1.jpeg', 
 },
 
 {
   id: 2,
   title: "Juego de toalla y toallón",
   price: 2100,
-  pictureUrl:'https://d2r9epyceweg5n.cloudfront.net/stores/089/625/products/belly-nuevo-21-0b852b1af28b33a0a216055293559984-1024-1024.jpg', 
+  pictureUrl: 'https://d2r9epyceweg5n.cloudfront.net/stores/089/625/products/belly-nuevo-21-0b852b1af28b33a0a216055293559984-1024-1024.jpg', 
 }, 
 
 {
   id: 3,
   title: "Juego de sabanas",
   price: 7500,
-  pictureUrl:'https://d2r9epyceweg5n.cloudfront.net/stores/858/478/products/cadiz21-0433871aeb589e22f216256188892750-1024-1024.jpg', 
+  pictureUrl: 'https://d2r9epyceweg5n.cloudfront.net/stores/858/478/products/cadiz21-0433871aeb589e22f216256188892750-1024-1024.jpg', 
 },
 ]
 
