@@ -1,4 +1,5 @@
 import React from 'react'
+import Item from './Item';
 
 const ItemList = ({productos}) => {
   return (
@@ -7,7 +8,7 @@ const ItemList = ({productos}) => {
     productos.length > 0 ? (
       productos.map((productos) => (
       <>
-      <div>{productos.id}{productos.title}{productos.pictureUrl}</div>
+      <Item>{productos.id}{productos.title}{productos.pictureUrl}</Item>
       </>
     ))
     ) : (
@@ -16,5 +17,6 @@ const ItemList = ({productos}) => {
     </>
   );
 };
+
 
 export default ItemList;

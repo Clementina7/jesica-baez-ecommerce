@@ -1,23 +1,25 @@
 import React from 'react';
 import Formulario from './components/Formulario';
-import ItemListContainer from './components/ItemListContainer';
+import ItemListContainer from './components/ListContainer/ItemListContainer';
 import NavBar from './components/NavBar';
 import Lista from './components/Lista';
-import repasador from './repasador.jpg';
-import Item from './components/Item';
+import repasador from './assetes/repasador.jpg';
+import Item from './components/ListContainer/Item';
+import ItemList from './components/ListContainer/ItemList';
 
 const App = () => {
   return (
     <>
     <NavBar/>
     <br/>
-    <Item/>
-    <main className="d-flex justify-content-evenly w-100">
-      <ItemListContainer greeting={repasador}/>
-      <ItemListContainer/>
-      <ItemListContainer/>
-      <ItemListContainer/>
-    </main>
+    <ItemListContainer>
+    <ItemList className="d-flex justify-content-evenly w-100">
+      <Item greeting={repasador}/>
+      <Item greeting={repasador}/>
+      <Item/>
+      <Item/>
+    </ItemList>
+    </ItemListContainer>
     <br/>
     <Lista/>
     <br/>

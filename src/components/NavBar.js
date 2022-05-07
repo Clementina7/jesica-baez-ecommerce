@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../logo.png';
+import logo from '../../src/assetes/logo.png';
 import CartWidget from './CartWidget';
 
 function NavBar() {

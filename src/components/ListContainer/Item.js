@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from '../logo.png';
-import ItemCount from './ItemCount';
+import ItemCount from '../../components/ItemCount';
+import logo from '../../assetes/logo.png';
 
 
-const ItemListContainer = ({
+const Item = ({
   greeting,
   boton,
   imagen,
@@ -24,4 +24,5 @@ const ItemListContainer = ({
 
 }
 
-export default ItemListContainer;
+export default Item
+
