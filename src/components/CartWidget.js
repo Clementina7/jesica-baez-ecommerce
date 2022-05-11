@@ -8,7 +8,9 @@ const CartWidget = () => {
     <img src={carrito} className="rounded-circle" width="50" height="50" alt=""></img>       
     </a>
     </div>
+    
   )
+
 }
 
 export default CartWidget

@@ -1,8 +1,12 @@
 import React from 'react'
+import Item from '../ListContainer/Item'
 
-const ItemDetail = () => {
+
+function ItemDetail ({Item}) {
   return (
-    <div>ItemDetail</div>
+    <>
+    Foto - Descripcion - Precio
+    </>
   )
 }
 

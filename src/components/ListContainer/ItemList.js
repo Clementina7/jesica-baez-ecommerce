@@ -8,7 +8,7 @@ const ItemList = ({productos}) => {
     productos.length > 0 ? (
       productos.map((productos) => (
       <>
-      <Item>{productos.id}{productos.title}{productos.pictureUrl}</Item>
+      <Item>{productos.greeting}{productos.title}{productos.pictureUrl}</Item>
       </>
     ))
     ) : (
