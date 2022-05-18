@@ -8,10 +8,10 @@ function NavBar() {
 
     <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor:"#e2be99"}}>
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          <img src={logo} className="rounded-circle" width="60" height="60" alt=""></img>
-        </a>
-        <p className="navbar-nav text-dark">ARMENIA - blanco (&) deco</p>
+        <Link className="navbar-brand" to="/ItemListContainer">
+          <img src={logo} className="rounded-circle" width="60" height="60" alt="" />
+        </Link>
+        <p className="navbar-nav text-dark">ARMENIA - blanco & deco</p>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -22,7 +22,7 @@ function NavBar() {
             <a className="nav-link" href="#">Contacto</a>
           </div>
         </div>
-        <Link to="/CartWidget" ><CartWidget/></Link>
+        <CartWidget/>
       </div>
     </nav>
 

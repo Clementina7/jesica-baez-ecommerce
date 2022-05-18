@@ -5,6 +5,7 @@ import Item from '../components/ListContainer/Item'
 import Layout from '../components/Layout'
 import ItemDetailContainer from '../components/DetailContainer/ItemDetailContainer'
 import ItemDetail from '../components/DetailContainer/ItemDetail'
+import CartWidget from '../components/CartWidget'
 
 const Rutas = () => {
   return (
@@ -17,6 +18,8 @@ const Rutas = () => {
        <Route path="/Item" element={<Item/>} />
        <Route path="/ItemDetailContainer" element={<ItemDetailContainer/>} />
        <Route path="/ItemDetail" element={<ItemDetail/>} />
+       <Route path="/CartWidget" element={<CartWidget/>} />
+       
       </Route>
     </Routes>  
     </BrowserRouter>
