@@ -1,7 +1,7 @@
 import React from 'react';
 import ItemCount from '../../components/ItemCount';
 import logo from '../../assetes/logo.png';
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 
 const Item = ({
@@ -20,9 +20,9 @@ const Item = ({
         <p className="card-text">{texto}</p>
       </div>
       <div className="d-flex my-3">
-        <Link to={`/itemDetail/`}>
+        <NavLink to={`/itemDetail/${id}`}>
       <button type="button" className="btn" style={{backgroundColor:"pink"}}>Ver más...</button>
-      </Link>
+      </NavLink>
       </div>
       <div>
       <ItemCount stock="5" initial="1"/>

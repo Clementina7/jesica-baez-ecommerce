@@ -8,7 +8,7 @@ function NavBar() {
 
     <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor:"#e2be99"}}>
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/ItemListContainer">
+        <Link className="navbar-brand" to="/itemListContainer">
           <img src={logo} className="rounded-circle" width="60" height="60" alt="" />
         </Link>
         <p className="navbar-nav text-dark">ARMENIA - blanco & deco</p>

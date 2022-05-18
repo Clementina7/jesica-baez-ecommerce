@@ -14,12 +14,13 @@ const Rutas = () => {
     <Routes>
       <Route path="/" element={<Layout/>}>
        <Route index element={<ItemListContainer/>} />
-       <Route path="/ItemList" element={<ItemList/>} />
-       <Route path="/Item" element={<Item/>} />
-       <Route path="/ItemDetailContainer" element={<ItemDetailContainer/>} />
-       <Route path="/ItemDetail" element={<ItemDetail/>} />
-       <Route path="/CartWidget" element={<CartWidget/>} />
-       
+       <Route path="/category/:id" element={<ItemListContainer/>} />
+       <Route path="/item/:id" element={<ItemDetailContainer/>} />
+       <Route path="/itemList" element={<ItemList/>} />
+       <Route path="/item" element={<Item/>} />
+       <Route path="/itemDetail" element={<ItemDetail/>} />
+       <Route path="/cartWidget" element={<CartWidget/>} />
+      
       </Route>
     </Routes>  
     </BrowserRouter>
