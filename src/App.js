@@ -10,6 +10,7 @@
 // //import ItemList from './components/ListContainer/ItemList';
 
 import Rutas from "./Routes/Rutas";
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
     <Rutas/>
     </>
     
-  );
+  )
 }
 
 export default App;

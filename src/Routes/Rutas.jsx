@@ -1,24 +1,26 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import ItemList from "../components/ListContainer/ItemList"
-import ItemListContainer from "../components/ListContainer/ItemListContainer"
-import NavBar from "../components/NavBar"
-import Item from "../components/ListContainer/Item"
-import Layout from "../components/Layout"
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ItemList from '../components/ListContainer/ItemList'
+import ItemListContainer from '../components/ListContainer/ItemListContainer'
+import Item from '../components/ListContainer/Item'
+import Layout from '../components/Layout'
+import ItemDetailContainer from '../components/DetailContainer/ItemDetailContainer'
+import ItemDetail from '../components/DetailContainer/ItemDetail'
 
 const Rutas = () => {
   return (
-    <>
+    
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout/>}>
-      <Route index element={<NavBar/>}/>
-      <Route path="/ItemListContainer" element={<ItemListContainer/>}/>
-      <Route path="/ItemList" element={<ItemList/>}/>
-      <Route path="/Item" element={<Item/>}/>
+       <Route index element={<ItemListContainer/>} />
+       <Route path="/ItemList" element={<ItemList/>} />
+       <Route path="/Item" element={<Item/>} />
+       <Route path="/ItemDetailContainer" element={<ItemDetailContainer/>} />
+       <Route path="/ItemDetail" element={<ItemDetail/>} />
       </Route>
     </Routes>  
     </BrowserRouter>
-    </>
+    
   )
 }
 

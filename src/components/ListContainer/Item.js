@@ -1,25 +1,33 @@
 import React from 'react';
 import ItemCount from '../../components/ItemCount';
 import logo from '../../assetes/logo.png';
+import { Link } from 'react-router-dom'
 
 
 const Item = ({
-  greeting,
+  img,
   title,
-  btn,
+  texto,
+  id,
 }) => {
 
   return (
     <>
       <div className="card m-3" style={{width:"18rem"}}>
-        <img src={greeting || logo} className="card-img-top" alt="..."/>
+        <img src={img} className="card-img-top" alt="..."/>
       <div className="card-body">
-        <h1>{title}</h1>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h4>'Art. {id} = {title}'</h4>
+        <p className="card-text">{texto}</p>
       </div>
+      <div className="d-flex my-3">
+        <Link to={`/itemDetail/`}>
+      <button type="button" className="btn" style={{backgroundColor:"pink"}}>Ver más...</button>
+      </Link>
+      </div>
+      <div>
       <ItemCount stock="5" initial="1"/>
       </div>
-      
+      </div>
     </>
   );
 
