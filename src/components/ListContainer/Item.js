@@ -20,7 +20,7 @@ const Item = ({
         <p className="card-text">{texto}</p>
       </div>
       <div className="d-flex my-3">
-       <Link to={`/itemDetail/${id}`}>
+       <Link to={`/item/${id}`}>
        <button type="button" className="btn" style={{backgroundColor:"pink"}}>Ver más...</button>
        </Link>
       </div>
