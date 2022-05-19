@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import React from 'react';
 import ItemList from './ItemList';
-import { articulos } from "../../config";
+import { articulos } from "../../config/Index";
 
 function ItemListContainer () {
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import Detail from './Detail'
 
+// detalle de item especifico
 
 const ItemDetail = ({encontrar}) => {
   

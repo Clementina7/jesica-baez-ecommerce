@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../../src/assetes/logo.png';
 import CartWidget from './CartWidget';
 
@@ -8,17 +8,16 @@ function NavBar() {
 
     <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor:"#e2be99"}}>
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/itemListContainer">
+        <NavLink className="navbar-brand" to="/">
           <img src={logo} className="rounded-circle" width="60" height="60" alt="" />
-        </Link>
-        <p className="navbar-nav text-dark">ARMENIA - blanco & deco</p>
+        </NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-link active" aria-current="page" href="#">Home</a>
-            <a className="nav-link" href="#">Productos</a>
+            <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
+            <NavLink className="nav-link" to="/itemListContainer">Productos</NavLink>
             <a className="nav-link" href="#">Contacto</a>
           </div>
         </div>
