@@ -1,6 +1,5 @@
 import React from 'react';
 import ItemCount from '../../components/ItemCount';
-import logo from '../../assetes/logo.png';
 import { Link } from 'react-router-dom'
 
 
@@ -10,6 +9,7 @@ const Item = ({
   texto,
   id,
   }) => {
+
 
   return (
     <>

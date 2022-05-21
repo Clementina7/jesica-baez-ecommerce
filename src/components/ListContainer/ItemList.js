@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { GlobalContext } from '../../context/GlobalStateContext';
 import Item from './Item';
 
 const ItemList = ({productos}) => {
+
+  //const [productos] = useContext(GlobalContext)
+  
   return (
     <>
     {
     productos.length > 0 ? (
       productos.map((productos) => (
-      <>
-      <Item key={productos.id} img={productos.img} title={productos.title} id={productos.id} texto={productos.texto} />     
-      </>
+      <Item
+     key={productos.index} img={productos.img} title={productos.title} id={productos.id} texto={productos.texto} />     
+      
     ))
     ) : (
       <div className="text-center my-15">

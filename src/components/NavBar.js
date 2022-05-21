@@ -3,7 +3,9 @@ import { NavLink } from 'react-router-dom';
 import logo from '../../src/assetes/logo.png';
 import CartWidget from './CartWidget';
 
+
 function NavBar() {
+
   return (
 
     <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor:"#e2be99"}}>
@@ -18,7 +20,7 @@ function NavBar() {
           <div className="navbar-nav">
             <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
             <NavLink className="nav-link" to="/itemListContainer">Productos</NavLink>
-            <a className="nav-link" href="#">Contacto</a>
+            <NavLink className="nav-link" to="/">Contacto</NavLink>
           </div>
         </div>
         <CartWidget/>

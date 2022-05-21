@@ -1,5 +1,4 @@
 import React from 'react'
-import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { articulos } from '../../config/Index'
 import { useParams } from 'react-router-dom'

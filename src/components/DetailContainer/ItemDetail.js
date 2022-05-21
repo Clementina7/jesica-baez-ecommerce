@@ -3,6 +3,7 @@ import Detail from './Detail'
 
 // detalle de item especifico
 
+
 const ItemDetail = ({encontrar}) => {
   
   return (
@@ -25,4 +26,4 @@ const ItemDetail = ({encontrar}) => {
   )
 }
 
-export default ItemDetail
+export default ItemDetail 
